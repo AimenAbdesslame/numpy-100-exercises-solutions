@@ -7,6 +7,9 @@ I’m solving them step by step (Day 1 → Day 3) to strengthen my NumPy and dat
 
 ## 📂 Repository Structure
 
+
+
+
 numpy-100-exercises-solutions/
 │
 ├── day1_basics/
@@ -57,15 +60,15 @@ Day 2 – Intermediate (7 exercises): #12, #13, #14, #17, #18, #19, #21
 Day 3 – Advanced (6 exercises): #22, #24, #29, #30, #42, #57
 
 🎯 Goals
-Practice NumPy daily
+Practice NumPy daily  .
 
-Build a foundation for data science & ML
+Build a foundation for data science & ML.
 
-Track and share my learning progress
+Track and share my learning progress .
 
 📌 Notes
 These are my personal solutions – there may be multiple valid approaches.
 
-Feedback and contributions are welcome 🚀
+Feedback and contributions are welcome 🚀 .
 
 
