@@ -1,3 +1,4 @@
+
 # What Are Custom Dtypes in NumPy?
 #A dtype (data type) in NumPy specifies the type and size of an array’s elements. Built-in dtypes include np.int32, np.float64, and np.str_. Custom dtypes extend this by allowing you to define complex, user-specified types
 #Why Use Custom Dtypes : 
@@ -15,7 +16,6 @@ colors = np.dtype ([
     ('b' , np.ubyte,1) , 
     ('a' , np.ubyte,1) , 
 ])
-
 
 #testing : 
 arr = np.array ([(10,20,56,32),(230 , 10 , 50 , 0)] , dtype = colors )
