@@ -12,5 +12,6 @@ result_arr = arr1.dot(arr2)
 print(result_arr)
 
 
+
 # Alternative solution, in Python 3.5 and above
-#Z = np.ones((5,3)) @ np.ones((3,2))
+Z = np.ones((5,3)) @ np.ones((3,2))
