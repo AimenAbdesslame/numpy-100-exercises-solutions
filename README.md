@@ -40,7 +40,8 @@ numpy-100-exercises-solutions/
 
 
 
-## 🚀 How to Run
+
+## 🚀 How to  Run
 
 Clone the repo:
 git clone https://github.com/YOUR_USERNAME/numpy-100-exercises-solutions.git
