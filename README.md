@@ -8,8 +8,6 @@ I’m solving them step by step (Day 1 → Day 3) to strengthen my NumPy and dat
 ## 📂 Repository Structure
 
 
-
-
 numpy-100-exercises-solutions/
 │
 ├── day1_basics/
