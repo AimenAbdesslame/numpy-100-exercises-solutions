@@ -65,8 +65,9 @@ Build a foundation for data science & ML.
 
 Track and share my learning progress .
 
-📌 Notes
+📌 Notes 
 These are my personal solutions – there may be multiple valid approaches.
+
 
 Feedback and contributions are welcome 🚀 .
 
