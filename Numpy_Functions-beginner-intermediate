@@ -1,0 +1,263 @@
+# Numpy_Functions-beginner-intermediate-
+This repos have the most numpy functions that beginner need (input , output , purpos , when to use it and exemples )
+
+1. np.where
+
+Purpose: Conditional selection or replacement.
+
+Input: (condition [, x, y])
+
+Output:
+
+Only condition → indices.
+
+With x, y → array with chosen values.
+
+When to use: To filter indices or replace values.
+
+Example:
+
+arr = np.array([1, 2, 3, 4])
+print(np.where(arr > 2))         # (array([2, 3]),)
+print(np.where(arr > 2, 1, 0))   # [0 0 1 1]
+
+
+
+2. np.random
+
+Purpose: Random number generation module.
+
+Input: Used with sub-functions (rand, randint, etc.).
+
+Output: Depends on sub-function.
+
+When to use: For randomness in simulations/tests.
+
+Example:
+
+print(np.random.rand(2, 3))   # 2x3 array of floats in [0,1)
+
+
+
+3. np.random.randint
+
+Purpose: Generate random integers.
+
+Input: (low, high=None, size=None)
+
+Output: Scalar or array of integers.
+
+When to use: For discrete random sampling.
+
+Example:
+
+print(np.random.randint(0, 10, size=5))  # [3 7 2 9 1]
+
+
+
+4. np.random.rand
+
+Purpose: Generate random floats in [0,1).
+
+Input: shape
+
+Output: Array of floats.
+
+When to use: For random continuous values.
+
+Example:
+
+print(np.random.rand(4))   # [0.12 0.83 0.55 0.04]
+
+
+
+5. np.zeros
+
+Purpose: Create an array filled with zeros.
+
+Input: shape, optional dtype.
+
+Output: Zero array.
+
+When to use: Initialization, masks.
+
+Example:
+
+print(np.zeros((2, 3)))  
+# [[0. 0. 0.]
+#  [0. 0. 0.]]
+
+
+
+6. np.ones
+
+Purpose: Create an array filled with ones.
+
+Input: shape, optional dtype.
+
+Output: Ones array.
+
+When to use: Initialization, scaling.
+
+Example:
+
+print(np.ones((2, 2)))  
+# [[1. 1.]
+#  [1. 1.]]
+
+
+
+7. np.delete
+
+Purpose: Delete elements from an array.
+
+Input: (arr, obj, axis=None)
+
+Output: New array.
+
+When to use: Remove rows/columns/elements.
+
+Example:
+
+arr = np.array([10, 20, 30, 40])
+print(np.delete(arr, 2))   # [10 20 40]
+
+
+
+8. np.unravel_index
+
+Purpose: Convert flat index to coordinates.
+
+Input: (index, shape)
+
+Output: Tuple of indices.
+
+When to use: When using argmax, argmin.
+
+Example:
+
+arr = np.array([[5, 10], [20, 8]])
+flat_index = np.argmax(arr)     # 2
+print(np.unravel_index(flat_index, arr.shape))  # (1, 0)
+
+
+
+9. np.arange
+
+Purpose: Create evenly spaced values.
+
+Input: (start, stop, step)
+
+Output: 1D array.
+
+When to use: Like Python range, but as array.
+
+Example:
+
+print(np.arange(0, 10, 2))   # [0 2 4 6 8]
+
+
+
+10. np.linspace
+
+Purpose: Create evenly spaced values in interval.
+
+Input: (start, stop, num=50)
+
+Output: 1D array of floats.
+
+When to use: For plotting, intervals.
+
+Example:
+
+print(np.linspace(0, 1, 5))   # [0.   0.25 0.5  0.75 1. ]
+
+
+
+11. np.reshape
+
+Purpose: Change array shape.
+
+Input: (arr, new_shape)
+
+Output: New array view (if possible).
+
+When to use: Prepare data for ML, matrices.
+
+Example:
+
+arr = np.arange(6)
+print(np.reshape(arr, (2, 3)))  
+# [[0 1 2]
+#  [3 4 5]]
+
+
+
+12. np.flatten / np.ravel
+
+Purpose: Convert multi-D to 1D.
+
+Input: None (array method).
+
+Output: 1D array.
+
+When to use: Flattening matrices.
+
+Example:
+
+arr = np.array([[1,2],[3,4]])
+print(arr.flatten())  # [1 2 3 4]
+print(arr.ravel())    # [1 2 3 4]
+
+
+
+13. np.sum
+
+Purpose: Sum elements.
+
+Input: (arr, axis=None)
+
+Output: Scalar or reduced array.
+
+When to use: Aggregations.
+
+Example:
+
+arr = np.array([[1,2,3],[4,5,6]])
+print(np.sum(arr))        # 21
+print(np.sum(arr, axis=0)) # [5 7 9]
+
+
+
+14. np.mean
+
+Purpose: Average of elements.
+
+Input: (arr, axis=None)
+
+Output: Scalar or reduced array.
+
+When to use: Statistics, normalization.
+
+Example:
+
+arr = np.array([10, 20, 30])
+print(np.mean(arr))  # 20.0
+
+
+
+15. np.argmax / np.argmin
+
+Purpose: Indices of max/min.
+
+Input: (arr, axis=None)
+
+Output: Index or array of indices.
+
+When to use: Locate max/min position.
+
+Example:
+
+arr = np.array([5, 2, 9, 1])
+print(np.argmax(arr))  # 2
+print(np.argmin(arr))  # 3
